@@ -12,4 +12,8 @@ router.get('/records', (req, res) => {
     dao.findAll(req, res);
 })
 
+router.get('/one', (req, res) => {
+    dao.findIdOne(req, res);
+})
+
 module.exports = router; 
